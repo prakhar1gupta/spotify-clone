@@ -1,95 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>spotify</title>
+    <title>Spotify Favorites</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <section>
-    <div id="container">
-        <div class="header">
-          <img src = "logo.jpg" class="fit-picture" alt="logo" width="44" >  SPOTIFY &nbsp; &nbsp; favourites
+    <header class="header">
+        <div class="container">
+            <img src="logo.jpg" class="logo" alt="Spotify Logo">
+            <h1 class="header-title">Spotify Favorites</h1>
         </div>
-        <div class="main">
-            <img src="latinParty.jpg" alt="latinParty"><img src="moodBooster.jpg" alt=""><img src="edm.jpg" alt=""><img src="dopeshope.jpg" alt="">
-            <br>
-            <p id="latest">Latest Songs</p>
-            
-            <br>
-           
-           <div id="con">
-            <div class="p1">
-            <img src="onism.png" alt="" width="50%" height="2%"><img src="onism2.png" alt="" width="50%" >
+    </header>
+
+    <main>
+        <section class="container">
+            <div class="main">
+                <h2 class="section-title">Featured Albums</h2>
+                <div class="album-container">
+                    <div class="album">
+                        <img src="latinParty.jpg" alt="Latin Party">
+                        <p class="album-title">Latin Party Mix</p>
+                        <p class="album-artist">Various Artists</p>
+                    </div>
+                    <div class="album">
+                        <img src="moodBooster.jpg" alt="Mood Booster">
+                        <p class="album-title">Mood Booster</p>
+                        <p class="album-artist">Various Artists</p>
+                    </div>
+                    <div class="album">
+                        <img src="edm.jpg" alt="EDM">
+                        <p class="album-title">EDM Hits</p>
+                        <p class="album-artist">Various Artists</p>
+                    </div>
+                    <div class="album">
+                        <img src="dopeshope.jpg" alt="Dope Shop">
+                        <p class="album-title">Dope Shop</p>
+                        <p class="album-artist">Various Artists</p>
+                    </div>
+                </div>
+
+                <h2 class="section-title">Latest Songs</h2>
+                <div class="grid-container">
+                    <div class="grid-item">
+                        <img src="onism.png" alt="Onism 1">
+                        <img src="onism2.png" alt="Onism 2">
+                    </div>
+                    <div class="grid-item">
+                        <img src="onism3.png" alt="Onism 3">
+                        <img src="onism.png" alt="Onism 4">
+                    </div>
+                    <div class="grid-item">
+                        <img src="jolt.png" alt="Jolt">
+                        <img src="shape.png" alt="Shape">
+                    </div>
+                </div>
+
+                <h2 class="section-title">Popular Artists</h2>
+                <div class="artist-container">
+                    <div class="artist">
+                        <img src="pop.png" alt="Pop Artist 1">
+                        <p class="artist-name">Taylor Swift</p>
+                    </div>
+                    <div class="artist">
+                        <img src="pop2.png" alt="Pop Artist 2">
+                        <p class="artist-name">Ed Sheeran</p>
+                    </div>
+                    <div class="artist">
+                        <img src="pop3.png" alt="Pop Artist 3">
+                        <p class="artist-name">Ariana Grande</p>
+                    </div>
+                </div>
+
+
+                <h2 class="section-title">Latest English</h2>
+                <img src="latEng.png" alt="Latest English Songs">
+
+                <h2 class="section-title">Latest Hindi</h2>
+                <img src="latHindi.png" alt="Latest Hindi Songs">
             </div>
-            <!-- <div class="p2">
-                <img src="onism.png" alt="" width="25%" >&nbsp;&nbsp; <img src="onism.png" alt="" width="25%" >
-            </div> -->
-            <div class="p3"><img src="onism3.png" alt="" width="50%"><img src="onism.png" alt="" width="50%" ></div>
-            <div class="p4"><img src="jolt.png" alt="" width="50%" ><img src="shape.png" alt="" width="50%" ></div>
-            <!-- <div class="p5"><img src="onism.png" alt="" width="25%" >&nbsp;&nbsp; <img src="onism.png" alt="" width="25%" ></div> -->
-            
-        </div>
-        <br><p>popular artists</p>
-        <br>
-        <img src="pop.png" alt=""><img src="pop2.png" alt=""><img src="pop3.png" alt="">
-        <br>
-        <img src="type.png" alt="">
-        <br><br>
-        <p>latest english</p><br>
-        <img src="latEng.png" alt="">
-        <br><br>
-        Latest Hindi
-        <br><br>
-        <img src="latHindi.png" alt="">
-        
 
-        </div>
-        
-        <div class="queue">
-            Queue
-            <br>
-            <img src="1.png">
-            <br><br>
-            <img src="2.png" alt="">
-            <br><br>
-            &nbsp;&nbsp;<img src="3.png" alt="">
-            <br><br>
-            &nbsp;&nbsp;<img src="4.png" alt="">
-            <br><br>
-            <img src="5.png" alt="">
-            <br><br>
-            <img src="6.png" alt="">
-            <br><br>
-            <img src="7.png" alt="">
-            <br><br>
-            <img src="8.png" alt="">
-            <br><br>
-            <img src="9.png" alt="">
-            
-            <br><br>
-            <img src="10.png" alt="">
-            
-            <br><br>
-            <img src="11.png" alt="">
-            
-            <br><br>
-            <img src="12.png" alt="">
-            
-            <br><br>
-            <img src="13.png" alt="">
-            
-            <br><br>
-            <img src="14.png" alt="">
-            
-            <br><br>
-            <img src="15.png" alt="">
-            
+            <aside class="queue">
+                <h2 class="section-title">Queue</h2>
+                <div class="queue-images">
+                    <img src="1.png" alt="Song 1">
+                    <img src="2.png" alt="Song 2">
+                    <img src="3.png" alt="Song 3">
+                    <img src="4.png" alt="Song 4">
+                    <img src="5.png" alt="Song 5">
+                    <img src="6.png" alt="Song 6">
+                    <img src="7.png" alt="Song 7">
+                    <img src="8.png" alt="Song 8">
+                    <img src="9.png" alt="Song 9">
+                    <img src="10.png" alt="Song 10">
+                    <img src="11.png" alt="Song 11">
+                    <img src="12.png" alt="Song 12">
+                    <img src="13.png" alt="Song 13">
+                    <img src="14.png" alt="Song 13">
+                    <img src="15.png" alt="Song 15">
+                </div>
+            </aside>
+        </section>
+    </main>
 
+    <footer class="footer">
+        <div class="container">
+            <p>© 2024 Spotify Favorites. All rights reserved.</p>
         </div>
-        
-     </div>
-    </section>
+    </footer>
 </body>
+
 </html>

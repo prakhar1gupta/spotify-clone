@@ -1,82 +1,165 @@
-*{
-    margin: 0%;
-    padding: 0%;
-    /* border: 1px solid black; */
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    text-transform: capitalize;
-    background-color: rgb(7, 7, 22);
-    color: aliceblue;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-#container{
-    height: 100vh;
-    width: 100vw;
-    border-color: rgb(245, 241, 236);
+
+body {
+    font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header styles */
+.header {
+    background-color: #000000;
+    padding: 10px 0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header .logo {
+    vertical-align: middle;
+    margin-right: 10px;
+    width: 40px; /* Adjust logo size */
+}
+
+.header .header-title {
+    display: inline-block;
+    font-size: 24px;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Main section styles */
+.main {
+    background-color: #1f1f1f;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    text-align: center; /* Center align main content */
+}
+
+.section-title {
+    font-size: 28px;
+    color: #39ff14;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.album-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.album {
+    width: 23%;
+    text-align: center;
+}
+
+.album img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.album-title, .album-artist {
+    font-size: 14px;
+}
+
+/* Grid layout for songs and artists */
+.grid-container {
     display: grid;
-    grid-template-columns: 5fr 2fr ;
-    grid-template-rows: 2fr 41fr ;
-    grid-template-areas: "header  header "
-                         "main queue"
-    /* border 1px solid black; */
-    
-    
-                        
-
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
 }
 
-.header{
-    grid-area: header;
-    align-content:flex-start;
-    font-size: 24px;
-    
-    background-color: rgb(14, 14, 14);
-}
-.main{
-    grid-area: main;
-    /* align-content: center; */
-    font-size: 24px;
-    /* background-color: rgb(65, 114, 84); */
-
-}
-.queue{
-    grid-area:queue;
-    /* align-content: center; */
-    padding: 1%;
-    
-    font-size: 24px;
-    /* background-color: rgb(65, 114, 84); */
+.grid-item img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
 }
 
-div div div{
-
-#con{
-    height: 100vh;
-    width: 100vw;
-    display: grid;
-    grid-template-columns: 2fr 2fr ;
-    grid-template-rows: 2fr 2fr 2fr 2fr;
-    grid-template-areas: "p1 p2"
-                         "p3 p4"
-                         
-    
+.artist-container {
+    display: flex;
+    justify-content: space-around; /* Adjust as needed */
+    align-items: center; /* Align items vertically */
+    flex-wrap: wrap; /* Wrap items if they overflow */
 }
 
-.p1{
-    grid-area:p1;
+.artist {
+    text-align: center;
+    width: 200px; /* Adjust width as needed */
+    margin-bottom: 20px; /* Space between artists */
 }
-.p2{
-    grid-area:p2;
+
+.artist img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
 }
-.p3{
-    grid-area:p3;
+
+.artist-name {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #ffffff;
 }
-.p4{
-    grid-area:p4;
+
+
+/* Queue section styles */
+.queue {
+    background-color: #1f1f1f;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    text-align: left; /* Align queue section to the left */
 }
-.p5{
-    grid-area:p5;
+
+.queue-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; /* Align queue images to the left */
+    gap: 10px;
 }
+
+.queue-images img {
+    width: 48%;
+    border-radius: 8px;
+    margin-bottom: 10px;
 }
-.latest{
-    font-size: 44px;
+
+/* Footer styles */
+.footer {
+    background-color: #000000;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.footer p {
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.footer p a {
+    color: #39ff14;
+    text-decoration: none;
+}
+
+.footer p a:hover {
+    text-decoration: underline;
 }
